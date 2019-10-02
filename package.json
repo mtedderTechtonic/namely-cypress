@@ -1,0 +1,24 @@
+{
+  "name": "namely-cypress",
+  "version": "1.0.0",
+  "description": "Let's automate clocking in/out with cypress!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtedderTechtonic/namely-cypress.git"
+  },
+  "author": "Matt Tedder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtedderTechtonic/namely-cypress/issues"
+  },
+  "homepage": "https://github.com/mtedderTechtonic/namely-cypress#readme",
+  "devDependencies": {
+    "cypress": "^3.4.1"
+  },
+  "dependencies": {}
+}
