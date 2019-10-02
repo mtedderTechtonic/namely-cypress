@@ -10,7 +10,22 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add("login", (email, password) => { ... })
+Cypress.Commands.add("login", (email=(Cypress.env('email')), password=(Cypress.env('password'))) => {
+    cy.get('#user_email').type(email)
+    cy.get('#user_password').type(`${password}{enter}`)
+    // cy.get('button.btn').click()
+})
+
+Cypress.Commands.add('visitUrl', () => {
+    cy.visit('/')
+})
+
+Cypress.Commands.add('dismiss', () => {
+    cy.on('uncaught:exception', () => {
+        done()
+        return false
+    }) // bypasses single uncaught exception error
+})
 //
 //
 // -- This is a child command --
