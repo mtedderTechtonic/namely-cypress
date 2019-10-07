@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress": "npx cypress open"
+    "cypress": "npx cypress open",
+    "clock-in": "npx cypress run --spec 'cypress/integration/clock-in.spec.js'",
+    "clock-out": "npx cypress run --spec 'cypress/integration/clock-out.spec.js'"
   },
   "repository": {
     "type": "git",
