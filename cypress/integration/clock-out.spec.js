@@ -22,7 +22,7 @@ describe('Webclock dashboard', () => {
 					cy.get('.ClockStatusContainer').screenshot() // Takes a screenshot if user is clocked in..
 				} else {
 					// otherwise, clock them in!
-					cy.get('#ClockOut > .RootMenuItem')
+					cy.get('#ClockOut > .RootMenuItem').click()
 					cy.get('.BtnAction').click()
 					cy.get('.ClockStatusContainer').screenshot()
 					// cy.get('.approve > #buttons > .btn').click()
